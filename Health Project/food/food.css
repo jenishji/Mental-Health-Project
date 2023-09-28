@@ -1,0 +1,189 @@
+/* Reset some default styles */
+body, h2, p {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.navbar {
+    background-color:rgb(47, 46, 46);
+    color: white;
+    position: fixed;
+    width: 100%;
+    height: 9%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  #menu a{
+    padding-bottom: 30px;
+  }
+  
+  h1{
+    padding-top: 50px;
+  }
+  .container {
+    height: 72px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+  }
+  
+  .logo {
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .bar {
+    background-color: white;
+    height: 3px;
+    width: 30px;
+    margin: 3px 0;
+    transition: 0.4s;
+  }
+  
+  .menu {
+    list-style: none;
+    display: flex;
+  }
+  
+  .menu li {
+    margin-right: 20px;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.2s;
+  }
+  
+  .menu a:hover {
+    color: goldenrod;
+  }
+  
+  /* Media queries for responsive design */
+  @media screen and (max-width: 768px) {
+    .menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      right: 0;
+      background-color: black;
+      text-align: center;
+    }
+  
+    .menu.active {
+      display: flex;
+    }
+  
+    .menu-toggle {
+      display: flex;
+    }
+  }
+  
+.white
+{
+    color: #fff;
+    font-size: 2.5rem;
+    font-family: 'Martian Mono', monospace;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+
+}/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    background-image: url(veg.jpeg);
+    /* background-repeat: no-repeat; */
+    /* background-size: 100% 100%; */
+    background-attachment: fixed;
+}
+
+header {
+    /* background-color: #333; */
+    color: #121111;
+    padding: 20px;
+    text-align: center;
+}
+
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.book {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    overflow: scroll;
+
+    
+}
+
+.book img {
+    max-width: 100%;
+    height: 300px;
+    padding: 30px;
+    padding-top: 60px;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+.bookd{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    /* color: #fff; */
+
+}
+.book-heading{
+    font-size: 50px;
+
+}
+.b1{
+    height: 100px;
+}
+.first{
+    align-items: center;
+    position: relative;
+    left: 450px;
+    width: 600px;
+    height: 400px;
+    padding-top: 20px;
+    
+}

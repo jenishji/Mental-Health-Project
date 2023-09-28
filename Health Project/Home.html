@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="fevi.png" type="image/png" />
+    <title>MindZen</title>
+    <style>
+      /* Style for the navbar */
+      .navbar {background-color: #333;
+        color: #fff;
+      }
+
+      .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+      }
+
+      /* Style for the dropdown menu */
+      .dropdown {
+        position: relative;
+      }
+
+      .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #333;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .dropdown:hover .dropdown-menu {
+        display: block;
+      }
+
+      .dropdown-menu li {
+        padding: 10px;
+      }
+
+      .dropdown-menu li a {
+        color: #fff;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navsection -->
+    <nav class="navbar">
+      <div class="container">
+        <a href="Home.html" class="logo"
+          ><div>
+            <img
+              style="padding-top: 3px"
+              height="150px"
+              width="150px"
+              src="logo.png"
+              alt=""
+            /></div
+        ></a>
+        <div class="menu-toggle">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <ul class="menu" id="menu">
+          <li><a href="Home.html">Home</a></li>
+          <li class="dropdown">
+            <a href="src/Health.html">Articles</a>
+            <ul class="dropdown-menu">
+              <li><a href="src/Health.html">Health</a></li>
+              <li><a href="src/Suicide.html">Suicide</a></li>
+              <li><a href="src/Anxiety.html">Anxiety</a></li>
+            </ul>
+          </li>
+          <li><a href="videos/code7.html">Videos</a></li>
+          <li><a href="Tips/mental.html">Books</a></li>
+          <li><a href="food/food.html">Food</a></li>
+          <li><a href="Tips/tips.html">Tips</a></li>
+          <li><a href="videos/yoga2.html">Meditation</a></li>
+
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Image section -->
+    <div class="slider-container">
+      <div class="left-slide">
+        <div style="background-color: rgb(109, 183, 109)">
+          <h1>Focus</h1>
+          <p>“What you stay focused on will grow.”</p>
+        </div>
+        <div style="background-color: black">
+          <h1>Avoid Overthinking!</h1>
+          <p>"The more you brood, the less you do."</p>
+        </div>
+        <div style="background-color: #252e33">
+          <h1>Healthy Food</h1>
+          <p>"Came from a plant, eat it; was made in a plant, don't."</p>
+        </div>
+        <div
+          style="
+            background: linear-gradient(
+              110.3deg,
+              rgb(238, 179, 123) 8.7%,
+              rgb(216, 103, 77) 47.5%,
+              rgb(114, 43, 54) 89.1%
+            );
+          "
+        >
+          <h1>Meditate</h1>
+          <p>“Mindfulness allows us to live life fully."</p>
+        </div>
+      </div>
+      <div class="right-slide">
+        <div style="background-image: url('yoga.jpg')"></div>
+        <div style="background-image: url('2.jpg')"></div>
+        <div style="background-image: url('3.jpg')"></div>
+        <div style="background-image: url('5.jpg')"></div>
+      </div>
+      <div class="action-buttons">
+        <button class="down-button">
+          <i class="fas fa-arrow-down"></i>
+        </button>
+        <button class="up-button">
+          <i class="fas fa-arrow-up"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- EndingSection -->
+    <div class="endsection">
+      <div class="testimonial-container">
+        <div class="progress-bar"></div>
+        <div class="fas fa-quote-right fa-quote"></div>
+        <div class="fas fa-quote-left fa-quote"></div>
+        <p class="testimonial">
+          “We would never tell someone with a broken leg that they should stop
+          wallowing and get it together. We don’t consider taking medication for
+          an ear infection something to be ashamed of. We shouldn’t treat mental
+          health conditions any differently.”
+        </p>
+        <div class="user">
+          <img
+            src="data:image/jpeg;base64,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"
+            alt="user"
+            class="user-image"
+          />
+          <div class="user-details">
+            <h4 class="username">Michelle Obama</h4>
+            <p class="role">Author</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ending">
+      <section id="banner" class="section-m1">
+        <h2>
+          “The key to a <span>healthy life </span>is having a healthy mind.”
+        </h2>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
